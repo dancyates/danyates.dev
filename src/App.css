@@ -2,20 +2,79 @@
 
 * {
   font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.app {
-  text-align: center;
+a:visited {
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #f64f59;
+  transition: 0.3s;
+}
+
+a:hover,
+a:focus {
+  color: #DB4650;
+}
+
+.top-gradient-bar {
+  width: 100%;
+  height: 10px;
+  background: rgb(18,194,233);
+  background: linear-gradient(225deg, rgba(18,194,233,1) 0%, rgba(196,113,237,1) 50%, rgba(246,79,89,1) 100%);
 }
 
 .app-header {
-  background: rgb(18,194,233);
-  background: linear-gradient(225deg, rgba(18,194,233,1) 0%, rgba(196,113,237,1) 50%, rgba(246,79,89,1) 100%);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 200px 300px 200px 300px;
+}
+
+.heading-name {
+  font-size: 5rem;
+}
+
+.subheading-text-container {
+  width: 800px;
+}
+
+.subheading-text {
+  font-size: 1.5rem;
+}
+
+.cta {
+  margin-top: 30px;
+  padding-right: 20px;
+}
+
+.cta a {
+  display: block;
+  text-align: center;
+  width: 100px;
+  border: #f64f59 solid 2px;
+  border-radius: 5px;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.cta a:hover,
+.cta a:focus {
   color: white;
+}
+
+.cta a:hover {
+  background: #f64f59;
+}
+
+.cta a:focus {
+  background: #DB4650;
+  outline: lightskyblue solid 1px;
+  outline-offset: 2px;
+}
+
+.cta-container {
+  display: flex;
 }
