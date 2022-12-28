@@ -1,0 +1,22 @@
+{
+  "name": "danyates.dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dancyates/danyates.dev.git"
+  },
+  "author": "Dan Yates",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dancyates/danyates.dev/issues"
+  },
+  "homepage": "https://github.com/dancyates/danyates.dev#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  }
+}
