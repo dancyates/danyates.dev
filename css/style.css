@@ -78,10 +78,21 @@ p {
 
 a {
     color: #fca311;
-    text-decoration-style: wavy;
-    text-decoration-thickness: 1px;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 2px;
 }
 
-main {
+header {
     padding: 100px 300px 100px 100px;
+}
+
+nav {
+    text-align: center;
+    margin-top: 50px;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 20px;
 }
