@@ -2,6 +2,14 @@
 /* font-family: 'Outfit', sans-serif;
 font-family: 'Playfair Display', serif; */
 
+/* CSS variables */
+:root {
+    --background: #b5838d;
+    --foreground: #ffb4a2;
+    --accent1: #e5989b;
+    --accent2: #dda15e;
+    --accent3: #bc6c25;
+}
 
 /* Josh Comeau CSS reset */
 /*
@@ -60,42 +68,52 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* Styles */
 body {
-    background: #14213d;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left bottom, #14213d, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left bottom, #14213d, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: white;
+    /* background: #14213d;  fallback for old browsers */
+    /* background: -webkit-linear-gradient(to left bottom, #14213d, #000000);  Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to left bottom, #14213d, #000000); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background: var(--background);
+    color: var(--foreground);
 }
 
 h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 10rem;
+    font-size: 6rem;
 }
 
 p {
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 a {
-    color: #fca311;
-    text-decoration-style: dotted;
+    color: var(--accent1);
+    text-decoration-style: solid;
+    opacity: 1;
     text-decoration-thickness: 2px;
 }
 
 nav a {
-    color: #e5e5e5;
+    color: var(--foreground);
     font-size: 1rem;
-    opacity: 0.5;
+    opacity: 1;
     text-decoration: none;
 }
 
 header {
-    padding: 100px 300px 100px 100px;
+    /* padding: 100px 300px 100px 100px; */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
 }
 
 nav {
-    text-align: center;
-    padding-top: 50px;
+    text-align: right;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--foreground);
 }
 
 nav li {
