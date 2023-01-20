@@ -81,7 +81,7 @@ h1 {
     font-size: 6rem;
 }
 
-p {
+p, a {
     font-size: 1.2rem;
     font-weight: 200;
 }
@@ -120,4 +120,21 @@ nav li {
     list-style-type: none;
     display: inline-block;
     padding-right: 50px;
+}
+
+.button {
+    text-decoration: none;
+    border: solid 1px var(--accent1);
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background: var(--foreground);
+    color: var(--background);
+    border-color: var(--background);
+}
+
+.landing-p {
+    padding-bottom: 30px;
 }
