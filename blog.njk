@@ -6,8 +6,16 @@ title: Blog - danyates.dev
     <h1>Blog</h1>
 
     {% for post in collections.blog %}
-        <ul>
-            <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+        <ul class="blog-posts">
+            <a href="{{ post.url }}">
+                <div>
+                    <li>
+                        <h3>{{ post.data.title }}</h3>
+                        <p>{{ post.data.description }}</p>
+                        <p><em>{{ post.data.date | formattedDate }}</em></p>
+                    </li>
+                </div>
+            </a>
         </ul>
     {% endfor %}
 </main>
