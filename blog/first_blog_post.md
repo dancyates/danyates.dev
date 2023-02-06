@@ -7,3 +7,7 @@ date: 2023-01-21
 # My first blog post
 
 👋 This is my first blog post!
+
+This is some more content.
+
+And a bit more.
