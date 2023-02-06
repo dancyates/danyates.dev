@@ -109,7 +109,8 @@ a {
 }
 
 a:hover {
-    color: var(--foreground);
+    /* color: var(--foreground); */
+    text-decoration: none;
 }
 
 nav a {
@@ -122,6 +123,7 @@ nav a {
 
 nav a:hover {
     font-weight: 300;
+    color: var(--accent1);
 }
 
 header {
